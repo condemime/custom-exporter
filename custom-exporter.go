@@ -29,7 +29,7 @@ func main() {
 	hostname = "localhost"
         listen = hostname + ":" + port
         var output string
-        output = "Lancement " + listen + url + " (" + file + ")"
+        output = "Running " + listen + url + " (" + file + ")"
 
         h1 := func(w http.ResponseWriter, _ *http.Request) {
                 data, err := ioutil.ReadFile(file)
